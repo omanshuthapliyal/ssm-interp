@@ -26,7 +26,6 @@ from ssm_interpret._utils import (
     warn_unstable,
 )
 
-
 # ── Gramians ───────────────────────────────────────────────────────────────
 
 def gramians(

@@ -12,15 +12,15 @@ Import example::
 
 import warnings
 
+from ssm_interpret.ltv.gramians import gramians_from_model, gramians_ltv
+from ssm_interpret.ltv.scope import etmfd, gvi, llod, scope_report
+
 warnings.warn(
     "ssm_interpret.ltv is experimental. "
     "API stability and validation scope are limited — see module docstring.",
     stacklevel=2,
     category=FutureWarning,
 )
-
-from ssm_interpret.ltv.gramians import gramians_from_model, gramians_ltv
-from ssm_interpret.ltv.scope import etmfd, gvi, llod, scope_report
 
 __all__ = [
     "gramians_ltv",

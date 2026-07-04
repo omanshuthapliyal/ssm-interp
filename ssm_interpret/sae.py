@@ -33,7 +33,6 @@ import torch.nn as nn
 
 from ssm_interpret._utils import ArrayLike, to_torch
 
-
 # ── Sparse Autoencoder ─────────────────────────────────────────────────────
 
 class SparseAutoEncoder(nn.Module):
@@ -148,7 +147,7 @@ def alignment_score(
                   Values near 1.0 indicate the SAE has recovered the mode.
     """
     T_bal = to_torch(T_bal, dtype=torch.float32)
-    d = T_bal.shape[0]
+    T_bal.shape[0]
 
     # Decoder matrix: columns are feature directions, shape (d, d_hidden)
     W_dec = sae.decoder.weight.detach()   # (d, d_hidden)

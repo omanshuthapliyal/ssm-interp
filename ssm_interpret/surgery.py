@@ -40,7 +40,6 @@ import torch
 
 from ssm_interpret._utils import ArrayLike, check_system, check_T_bal, like_input, to_torch
 
-
 # ── Ablation ───────────────────────────────────────────────────────────────
 
 def ablate(

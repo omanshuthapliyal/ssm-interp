@@ -9,8 +9,7 @@ from __future__ import annotations
 
 import torch
 
-from ssm_interpret._utils import ArrayLike, check_system, like_input, to_torch
-
+from ssm_interpret._utils import ArrayLike, check_system, to_torch
 
 # ── Kalman subspace taxonomy ───────────────────────────────────────────────
 
