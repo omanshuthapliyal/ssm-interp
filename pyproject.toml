@@ -1,0 +1,69 @@
+[project]
+name = "ssm-interpret"
+version = "0.1.0"
+description = "Control-theoretic mechanistic interpretability for linear state space models"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+readme = "README.md"
+
+authors = [
+  {name = "Omanshu Thapliyal"},
+]
+
+keywords = [
+  "mechanistic interpretability",
+  "state space models",
+  "SSM",
+  "Mamba",
+  "balanced realization",
+  "causal intervention",
+]
+
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = [
+  "torch>=2.0.0",
+  "numpy>=1.24.0",
+  "scipy>=1.10.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "black>=24.0",
+  "ruff>=0.4",
+]
+docs = [
+  "mkdocs-material>=9.0",
+  "mkdocstrings[python]>=0.25",
+]
+
+[project.urls]
+Repository = "https://github.com/TODO/ssm-interpret"
+Paper      = "https://arxiv.org/abs/TODO"
+
+[build-system]
+requires      = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length    = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+[tool.black]
+line-length    = 100
+target-version = ["py310"]
+
+[tool.pytest.ini_options]
+testpaths    = ["tests"]
+python_files = "test_*.py"
+addopts      = "-v --tb=short"
