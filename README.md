@@ -160,13 +160,6 @@ pytest tests/ -v
 
 ---
 
-## Acknowledgements
-
-Development of this library was assisted by [Claude](https://claude.ai) (Anthropic),
-used as a coding tool during research and implementation.
-All scientific claims, experimental design, and mathematical content
-are the work of the author.
-
 ## License
 
 Apache 2.0 — see `LICENSE`.
