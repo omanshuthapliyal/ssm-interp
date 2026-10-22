@@ -1,0 +1,15 @@
+# SSM causal modes interpretability -- Python dependencies
+# Tested on Python 3.11 with the ssm-env conda environment (Apple M4 Max, macOS 15)
+# For Mamba-130M/370M/790M experiments (code/phase0/exp_n7_*.py): CUDA GPU required; mamba_ssm must be installed separately
+
+torch>=2.0.0
+numpy>=1.24.0
+scipy>=1.10.0
+matplotlib>=3.7.0
+pandas>=2.0.0
+tqdm>=4.65.0
+
+# For Mamba model experiments (code/phase0/) -- GPU machine only
+# transformers>=4.38.0
+# datasets>=2.0.0
+# mamba_ssm  # install from https://github.com/state-spaces/mamba (requires CUDA)
