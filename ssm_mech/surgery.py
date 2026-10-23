@@ -131,7 +131,7 @@ def _make_surgery_forward(
 
         y = _python_scan(u, dt, A_cont.to(dtype), B, C, mixer.D, V_k_ref[0])
         y = y * F.silu(z_t.transpose(1, 2))
-        return mixer.out_proj(y)
+        return mixer.out_proj(y.to(dtype))
 
     return forward
 
