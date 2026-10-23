@@ -6,7 +6,6 @@ build-backend = "setuptools.build_meta"
 name = "ssm-mech"
 version = "0.1.0"
 description = "Causal mode analysis for SSM language models via Gramian decomposition and state surgery"
-readme = "README_ssm_mech.md"
 requires-python = ">=3.10"
 license = { text = "Apache-2.0" }
 authors = [{ name = "Omanshu Thapliyal" }]
@@ -38,8 +37,9 @@ dev = [
     "ruff>=0.4",
 ]
 
-[tool.setuptools.packages.find]
-include = ["ssm_mech*"]
+[tool.setuptools]
+packages = ["ssm_mech"]
+package-dir = {"ssm_mech" = "."}
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
